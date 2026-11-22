@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>perkie.dev</title>
+    <title>Percie Louise</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Percie Louise Y. Samaniego (BS Computer Science III, University of the Philippines Visayas)."
+    />
+
+    <!-- Fonts: Fraunces (headings) & Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,SOFT,WONK,wght@0,9..144,100,1,300..700;1,9..144,100,1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Apply saved theme before paint to prevent dark-mode white flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('ps-theme');
+          var theme = saved === 'dark' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
